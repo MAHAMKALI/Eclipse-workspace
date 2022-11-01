@@ -1,0 +1,24 @@
+package com.JUnit.Mackito.contoller;
+
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+
+
+
+@RunWith(MockitoJUnitRunner.class)
+public class EmployeeControllerTest {
+	
+	private MockMvc mockMvc;
+	
+	ObjectMapper objectMapper = new ObjectMapper();
+	ObjectWriter objectWriter = objectMapper.writer();
+	
+	@Mock
+	
+	
+}

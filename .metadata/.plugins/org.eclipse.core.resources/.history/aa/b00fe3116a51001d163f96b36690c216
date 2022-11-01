@@ -1,0 +1,18 @@
+package com.JUnit.Mackito;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CalculatorTest {
+	
+	
+	private Calculator calculator;
+	
+	@Test
+	public void testMultiply() {
+		calculator=new Calculator();
+		assertEquals(20, calculator.multiply(5, 4));
+	}
+}

@@ -1,0 +1,16 @@
+package com.JUnit.Mackito;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CalculatorTest {
+	
+	private Calculator calculator;
+	
+	@Test
+	public void multiplyTest() {
+		calculator=new Calculator();
+		assertEquals(20, calculator.multiply(5, 4));
+	}
+}

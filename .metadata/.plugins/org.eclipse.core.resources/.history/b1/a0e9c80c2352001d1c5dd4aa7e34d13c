@@ -1,0 +1,12 @@
+package com.JUnit.Mackito.contoller;
+
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.web.servlet.MockMvc;
+
+@RunWith(MockitoJUnitRunner.class)
+public class EmployeeControllerTest {
+	
+	private MockMvc mockMvc;
+	
+}

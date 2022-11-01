@@ -1,0 +1,37 @@
+package com.JUnit.Mackito.contoller;
+
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.JUnit.Mackito.EmployeeRepository;
+import com.JUnit.Mackito.Entity.EmployeeEntity;
+import com.JUnit.Mackito.controller.EmployeeController;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+
+
+
+@RunWith(MockitoJUnitRunner.class)
+public class EmployeeControllerTest {
+	
+	private MockMvc mockMvc;
+	
+	ObjectMapper objectMapper = new ObjectMapper();
+	ObjectWriter objectWriter = objectMapper.writer();
+	
+	@Mock
+	private EmployeeRepository employeeRepository;
+	
+	@InjectMocks
+	private EmployeeController employeeController;
+	
+	EmployeeEntity e1 = new EmployeeEntity(1,"kishore",2400,"chennai",4);
+	EmployeeEntity e2 =new EmployeeEntity(1,"kishore",2400,"chennai",4);
+	EmployeeEntity e1 = new EmployeeEntity(1,"kishore",2400,"chennai",4);
+	
+	
+	
+}
